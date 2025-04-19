@@ -23,7 +23,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue src",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx,.vue src --fix",
     "push": "pnpm build:lib && pnpm publish --no-git-checks --registry https://registry.npmjs.org/",
-    "prepare": "husky"
+    "prepare": "husky && pnpm build:lib"
   },
   "config": {
     "commitizen": {
